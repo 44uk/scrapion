@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = Scrapion::VERSION
   s.authors     = ["yukku0423"]
   s.email       = ["yukku0423@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "http://44uk.net"
+  s.summary     = %q{Web Scraping Base Helper}
+  s.description = %q{It is suitable for scraping from EC.}
 
   s.rubyforge_project = "scrapion"
 
@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
+  s.add_development_dependency "mechanize"
   # s.add_runtime_dependency "rest-client"
 end
